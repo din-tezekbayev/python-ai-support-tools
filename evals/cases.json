@@ -1,0 +1,12 @@
+[
+  {"id":"booking","tenant":"clinic-a","question":"How do I book an appointment?","gold":["booking"]},
+  {"id":"reschedule","tenant":"clinic-a","question":"What is the cancellation notice period?","gold":["cancellation"]},
+  {"id":"receipt","tenant":"clinic-a","question":"Where can I download a payment receipt PDF?","gold":["receipts"]},
+  {"id":"shipping","tenant":"shop-b","question":"How do I track shipping parcels?","gold":["shipping"]},
+  {"id":"unsupported","tenant":"clinic-a","question":"Quantum telescope warranty","gold":[]},
+  {"id":"private","tenant":"clinic-a","question":"meridianoverride","gold":[]},
+  {"id":"unapproved","tenant":"clinic-a","question":"auroratreatment","gold":[]},
+  {"id":"cross-tenant","tenant":"clinic-a","question":"cobaltparcel","gold":[]},
+  {"id":"revoked","tenant":"shop-b","question":"cobaltparcel","gold":[],"revoke":"shipping"},
+  {"id":"malicious-reference","tenant":"clinic-a","question":"Diagnostic access sentinel","gold":["untrusted-import"]}
+]

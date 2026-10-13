@@ -1,0 +1,16 @@
+[project]
+name = "python-ai-support-tools"
+version = "0.2.0"
+description = "Tenant-scoped support RAG with LangGraph, evidence validation, and offline evaluations"
+requires-python = ">=3.10"
+dependencies = [
+  "langgraph>=1,<2",
+  "langsmith>=0.4,<1",
+  "fastapi>=0.115,<1",
+  "pydantic>=2.7,<3",
+  "httpx>=0.27,<1",
+  "uvicorn>=0.30,<1",
+]
+
+[tool.uv]
+package = false

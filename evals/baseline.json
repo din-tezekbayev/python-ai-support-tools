@@ -1,0 +1,113 @@
+{
+  "method": "lexical BM25, access filtering before ranking",
+  "k": 3,
+  "scope": "Fixed synthetic retrieval cases; not generated-answer quality or production accuracy. Malicious text remains retrievable data; workflow tests verify its handling.",
+  "corpus_source_count": 7,
+  "corpus_tenant_count": 2,
+  "case_count": 10,
+  "passed": true,
+  "answerable_cases": 5,
+  "no_evidence_cases": 5,
+  "recall_at_k": 1.0,
+  "mrr_at_k": 1.0,
+  "no_evidence_abstention_rate": 1.0,
+  "cases": [
+    {
+      "id": "booking",
+      "expected_sources": [
+        "booking"
+      ],
+      "retrieved_sources": [
+        "booking",
+        "receipts",
+        "cancellation"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "passed": true
+    },
+    {
+      "id": "reschedule",
+      "expected_sources": [
+        "cancellation"
+      ],
+      "retrieved_sources": [
+        "cancellation"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "passed": true
+    },
+    {
+      "id": "receipt",
+      "expected_sources": [
+        "receipts"
+      ],
+      "retrieved_sources": [
+        "receipts"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "passed": true
+    },
+    {
+      "id": "shipping",
+      "expected_sources": [
+        "shipping"
+      ],
+      "retrieved_sources": [
+        "shipping"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "passed": true
+    },
+    {
+      "id": "unsupported",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "correct_abstention": true,
+      "passed": true
+    },
+    {
+      "id": "private",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "correct_abstention": true,
+      "passed": true
+    },
+    {
+      "id": "unapproved",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "correct_abstention": true,
+      "passed": true
+    },
+    {
+      "id": "cross-tenant",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "correct_abstention": true,
+      "passed": true
+    },
+    {
+      "id": "revoked",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "correct_abstention": true,
+      "passed": true
+    },
+    {
+      "id": "malicious-reference",
+      "expected_sources": [
+        "untrusted-import"
+      ],
+      "retrieved_sources": [
+        "untrusted-import"
+      ],
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "passed": true
+    }
+  ]
+}
